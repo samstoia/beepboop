@@ -28,7 +28,7 @@ function beepBoop(inputNumber) {
       if (i % 3 === 0 && i !== 0) {//creates response for numbers divisible by 3
         createArray.push(" I'm sorry, Dave, I'm afraid I can't do that");
       }
-      else if (i.toString().split("").includes("1")) {//creates responses for numbers that contain 1
+      else if (i.toString().split("").includes("1")) {//creates responses for numbers that contain 1, converts number to string, into array. then searches array
         createArray.push(" Boop!");
     }
       else if (i.toString().split("").includes("0")) {//creates responses for numbers that contain 0
