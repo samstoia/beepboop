@@ -7,7 +7,16 @@ $(document).ready(function() {
   });
 });
 
-
+//back end
+function beepBoop(inputNumber) {
+  var createArray = []
+    for (var i = 0; i <= inputNumber; i++) {
+      if (i % 3 === 0) {
+        createArray.push("Sorry Dave, I can not do that");
+      }
+      return createArray
+    }
+}
 
 //if (inputNumber.includes("0")) {
 //  alert("beep");
