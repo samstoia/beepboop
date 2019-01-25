@@ -12,27 +12,17 @@ function beepBoop(inputNumber) {
   var createArray = []
     for (var i = 0; i <= inputNumber; i++) {
       if (i % 3 === 0 && i !== 0) {
-        createArray.push("Sorry Dave, I can not do that");
+        createArray.push(" I'm sorry, Dave, I'm afraid I can't do that");
       }
       else if (i.toString().split("").includes("1")) {
-        createArray.push(" Boop! ");
+        createArray.push(" Boop!");
     }
       else if (i.toString().split("").includes("0")) {
-      createArray.push(" Beep! ");
-    }
+      createArray.push(" Beep!");
+      }
       else {
-      createArray.push(i);
-    }
+      createArray.push(" " + i);
+      }
   }
   return createArray
 }
-
-//if (inputNumber.includes("0")) {
-//  alert("beep");
-//}
-//else if (inputNumber.includes("1")) {
-//  alert("boop")
-//}
-//else if (parseInt(inputNumber) % 3 === 0) {
-//  alert("sorry")
-//}
