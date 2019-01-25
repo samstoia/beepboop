@@ -11,11 +11,20 @@ $(document).ready(function() {
 function beepBoop(inputNumber) {
   var createArray = []
     for (var i = 0; i <= inputNumber; i++) {
-      if (i % 3 === 0) {
+      if (i % 3 === 0 && i !== 0) {
         createArray.push("Sorry Dave, I can not do that");
       }
-      return createArray
+      else if (i.toString().split("").includes("1")) {
+        createArray.push(" Boop! ");
     }
+      else if (i.toString().split("").includes("0")) {
+      createArray.push(" Beep! ");
+    }
+      else {
+      createArray.push(i);
+    }
+  }
+  return createArray
 }
 
 //if (inputNumber.includes("0")) {
