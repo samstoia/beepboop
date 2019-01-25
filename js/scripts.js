@@ -25,14 +25,14 @@ $(document).ready(function() {
 function beepBoop(inputNumber) {
   var createArray = []
     for (var i = 0; i <= inputNumber; i++) {//creates for loop that scans entirety of inputNumber
-      if (i % 3 === 0 && i !== 0) {//creates response for numbers divisible by 3
-        createArray.push(" I'm sorry, Dave, I'm afraid I can't do that");
+      if (i.toString().split("").includes("0")) {//creates responses for numbers that contain 0
+      createArray.push(" Beep!");
       }
       else if (i.toString().split("").includes("1")) {//creates responses for numbers that contain 1, converts number to string, into array. then searches array
         createArray.push(" Boop!");
-    }
-      else if (i.toString().split("").includes("0")) {//creates responses for numbers that contain 0
-      createArray.push(" Beep!");
+      }
+      else if (i % 3 === 0 && i !== 0) {//creates response for numbers divisible by 3
+        createArray.push(" I'm sorry, Dave, I'm afraid I can't do that");
       }
       else {//creates response for all other numbers in sequence
       createArray.push(" " + i);
