@@ -24,6 +24,10 @@ $(document).ready(function() {
 //back end
 function beepBoop(inputNumber) {
   var createArray = []
+    if (isNaN(inputNumber)) {
+        return "Yo, Enter a number fool!"
+      }
+
     for (var i = 0; i <= inputNumber; i++) {//creates for loop that scans entirety of inputNumber
       if (i.toString().split("").includes("0")) {//creates responses for numbers that contain 0
       createArray.push(" Beep!");
